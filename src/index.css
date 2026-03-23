@@ -49,9 +49,12 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  font-size: small;
+  height: 30px;
+  width: 100%;
+
 }
 button:hover {
   border-color: #646cff;
@@ -79,7 +82,7 @@ button:focus-visible {
 
 .left-nav button {
   display: block;
-  margin: 0 auto;
+  margin: 5px auto;
   
 }
 
@@ -94,10 +97,10 @@ button:focus-visible {
 
 }
 
-/* right aside */
+/* right aside  */
 .aside-right {
   flex: 0 0 320px;
-  border: palevioletred 1px solid;
+  border: rgb(112, 216, 136) 1px solid;
   /* display: none; */
 }
 
@@ -111,21 +114,23 @@ button:focus-visible {
 
 .minidash-container{
   display: flex;
+  height: 150px;
 }
+
 .dashwidget {
-  height: 250px;
+  
   width: 300px;
   border: whitesmoke 1px dotted;
 }
-/* .header p {
-  margin: 0;
-} */
+
+
+
 
 
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    /* color: #213547; */
     background-color: #ffffff;
   }
   a:hover {
@@ -134,6 +139,22 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: lightgreen;
+        
+    }
+
+    .aside-right{
+      display: none;
+    } 
+
+    .left-nav {
+      display: none;
+    }
+
 }
 
 

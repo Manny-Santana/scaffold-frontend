@@ -10,6 +10,8 @@ const Nav = () =>{
             <button>Add Item</button> 
             <button>Remove Item</button>   
             <button>Edit Item</button>
+            <button>Calendar</button>
+            <button>Repairs</button>
          </nav>
     )
 }

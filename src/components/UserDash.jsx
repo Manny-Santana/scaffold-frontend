@@ -8,12 +8,12 @@ import DashWidget3 from './widgets/DashWidget3'
 
 // useState([])
 
-const UserDash = () =>{
+const UserDash = ({ data, updateData }) =>{
     return(
         <div className='minidash-container'>
-           <DashWidget1/>
-           <DashWidget2/>
-           <DashWidget3/> 
+           <DashWidget1 totalassets = {data.totalassets}/>
+           <DashWidget2 salesthisyear={data.salesthisyear}/>
+           <DashWidget3 totalinventory={data.totalinventory} updateData={updateData}/> 
         </div>
     )
 }
